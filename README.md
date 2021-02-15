@@ -7,6 +7,9 @@ Two steps for training are needed:
 
 # environment
 Python >= 3.6
+
 Cuda == 11.0
+
 Tensorflow-gpu == 1.10
+
 Keras == 2.2.0
