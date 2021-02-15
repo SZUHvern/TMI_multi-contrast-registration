@@ -1,5 +1,6 @@
 # A coarse-to-fine deformable transformation framework for unsupervised multi-contrast MR image registration with dual consistency constraint
-This is the code of TMI's paper 'A coarse-to-fine deformable transformation framework for unsupervised multi-contrast MR image registration with dual consistency constraint'
+This is the code of TMI's paper 'A coarse-to-fine deformable transformation framework for unsupervised multi-contrast MR image registration with dual consistency constraint'.
+
 ![image](https://github.com/SZUHvern/TMI_multi-contrast-registration/blob/main/fig_2.pdf)
 
 # Abstract:
@@ -10,7 +11,7 @@ Two steps for training are needed:
 1. Perform affine_train.py to train the AT-Net in advance
 2. Then perform registration.py with loding the weight of AT-Net
 
-# Environment
+# Environmental dependence
 Python >= 3.6
 
 CUDA == 11.0
@@ -19,7 +20,7 @@ Tensorflow-gpu == 1.10
 
 Keras == 2.2.0
 
-# Cite:
+# Cite this:
 If you use this framework or some part of the code, please cite:
 
 W. Huang et al., "A coarse-to-fine deformable transformation framework for unsupervised multi-contrast MR image registration with dual consistency constraint," in IEEE Transactions on Medical Imaging, doi: 10.1109/TMI.2021.3059282.
