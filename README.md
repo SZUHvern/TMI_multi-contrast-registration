@@ -8,8 +8,8 @@ Multi-contrast magnetic resonance (MR) image registration is useful in the clini
 
 # Training:
 Two steps for training are needed:
-1. Perform affine_train.py to train the AT-Net in advance
-2. Then perform registration.py with loding the weight of AT-Net
+1. Perform affine_train.py to train the AT-Net in advance.
+2. Then perform registration.py with the weight of AT-Net.
 
 # Environmental dependence
 Python >= 3.6
