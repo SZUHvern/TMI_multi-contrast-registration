@@ -11,10 +11,14 @@ Two steps for training are needed:
 
 # Environment
 Python >= 3.6
+
 CUDA == 11.0
+
 Tensorflow-gpu == 1.10
+
 Keras == 2.2.0
 
 # Referance:
 If you use this framework or some part of the code, please cite:
+
 W. Huang et al., "A coarse-to-fine deformable transformation framework for unsupervised multi-contrast MR image registration with dual consistency constraint," in IEEE Transactions on Medical Imaging, doi: 10.1109/TMI.2021.3059282.
