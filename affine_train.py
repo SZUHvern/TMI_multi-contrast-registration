@@ -43,7 +43,7 @@ def generator_val_stn(input, label, batch_size=32):
 if __name__ == "__main__":
 
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    path_h5_save = '/media/siat/770f90d2-a17b-4301-aa9f-ca2616ede7ec/TMI_reestablish/ori_data/deal/'
+    path_h5_save = './ori_data/deal/'
     output_path = './model/'
     load_weight = ''
     mode = 'train'
