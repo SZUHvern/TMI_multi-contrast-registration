@@ -2,7 +2,6 @@ from __future__ import print_function
 from keras.models import Model
 from keras.layers import *
 from neuron.layers import SpatialTransformer
-from stn_re import *
 from src.models.utils import get_initial_weights
 from src.models.layers import BilinearInterpolation
 
