@@ -130,10 +130,6 @@ def generator_val(src, tgt, fl, dl, batch_size=32):
     fl22 = fl2.flow(fl, batch_size=batch_size, shuffle=False)
     dl22 = dl2.flow(dl, batch_size=batch_size, shuffle=False)
 
-    next_src = next(train_src)
-    next_tgt = next(train_tgt)
-    next_fl = next(fl22)
-    next_dl = next(dl22)
     while True:
         next_src = next(train_src)
         next_tgt = next(train_tgt)
