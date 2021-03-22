@@ -113,9 +113,10 @@ def generator_train(src, tgt, batch_size=32):
     train_src = gen_src.flow(src, batch_size=batch_size, shuffle=True, seed=1)
     train_tgt = gen_tgt.flow(tgt, batch_size=batch_size, shuffle=True, seed=1)
 
-    next_src = next(train_src)
-    next_tgt = next(train_tgt)
+
     while True:
+        next_src = next(train_src)
+        next_tgt = next(train_tgt)
         yield [next_src, next_tgt, next_tgt], [next_tgt, next_tgt, next_tgt, next_tgt]
 
 def generator_val(src, tgt, fl, dl, batch_size=32):
@@ -134,6 +135,10 @@ def generator_val(src, tgt, fl, dl, batch_size=32):
     next_fl = next(fl22)
     next_dl = next(dl22)
     while True:
+        next_src = next(train_src)
+        next_tgt = next(train_tgt)
+        next_fl = next(fl22)
+        next_dl = next(dl22)
         yield [next_src, next_tgt, next_fl], [next_tgt, next_tgt, next_tgt, next_dl]
 
 def detection(output_path, path_h5_save, h5_name, load_weight=''):
