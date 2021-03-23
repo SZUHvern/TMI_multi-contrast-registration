@@ -21,10 +21,9 @@ def generator_train_stn(input, label, batch_size=32):
     train_image = gen_image.flow(input, batch_size=batch_size, shuffle=True, seed=1)
     train_mask = gen_mask.flow(label, batch_size=batch_size, shuffle=True, seed=1)
 
-    next_train = next(train_image)
-    next_mask = next(train_mask)
-
     while True:
+        next_train = next(train_image)
+        next_mask = next(train_mask)
         yield [next_train, next_mask], [next_mask]
 
 def generator_val_stn(input, label, batch_size=32):
@@ -34,10 +33,9 @@ def generator_val_stn(input, label, batch_size=32):
     train_image = gen_image2.flow(input, batch_size=batch_size, shuffle=False)
     train_mask = gen_mask2.flow(label, batch_size=batch_size, shuffle=False)
 
-    next_train = next(train_image)
-    next_mask = next(train_mask)
-
     while True:
+        next_train = next(train_image)
+        next_mask = next(train_mask)
         yield [next_train, next_mask], [next_mask]
 
 if __name__ == "__main__":
